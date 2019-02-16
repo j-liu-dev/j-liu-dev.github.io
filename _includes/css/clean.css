@@ -1,0 +1,7 @@
+.dsq-brlink {
+  display: none !important;
+}
+
+iframe {
+  position: fixed;
+}
