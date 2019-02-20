@@ -17,7 +17,7 @@ So there came the realization -
 > I need the **top-down approach**
 
 Here's how I broke the issue down to smaller pieces.
-<img src="/img/portfolio/top-down-sigsense.png" alt="Flight History Simulator" width="100%">
+<img src="/img/blog/top-down-sigsense.png" alt="Flight History Simulator" width="100%">
 
 At the end of the day, the challenge boiled down to resolving 3 **<abbr title="the green ones on the above figure">leaf issues</abbr>** :
 - Catch mouse events on Highcharts canvas
