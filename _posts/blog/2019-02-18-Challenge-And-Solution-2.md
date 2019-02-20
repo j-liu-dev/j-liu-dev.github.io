@@ -8,7 +8,8 @@ Styling-wise, have you ever experienced the dilemma between the pure-CSS solutio
 As a developer, I frequently find myself wondering between the two, especially when the UI needs more than just the conventional CSS rules.  
 Recently, while working at [Linux Academy](http://www.linuxacademy.com), I came across one of the most tricky issues in my CSS journey.
 
-Simply put, they wanted an extra bit of decor to their report tables - **grouping braces for table columns**.  
+Simply put, they wanted an extra bit of decor to their report tables - **grouping braces for table columns**.
+
 <img src="/img/blog/th-grouping-mock.png" alt="Table column grouping braces" width="100%">
 
 Before moving onto my solution, you could also give it a little thought, just for fun.
@@ -22,7 +23,8 @@ In my experience, fixed or proportional column widths are not effective. Try not
 I, as well as the client, wanted the solution that does not rely upon explicit column widths.
 
 I opted to go with a pure-CSS solution. Javascript simply didn't sound right.  
-And here's how I visualized the solution.  
+And here's how I visualized the solution.
+
 <img src="/img/blog/css-grouping-brace.png" alt="Table column grouping braces" width="100%">
 
 The colored blocks (from the above figure) were made _absolute_ children of the first columns of the groups.

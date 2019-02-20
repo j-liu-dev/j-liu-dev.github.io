@@ -8,7 +8,8 @@ While working at [Sigsense Technologies](http://www.sigsensetech.com), I was bad
 
 ![Machine Learning UI](/img/portfolio/sigsense_machine_learning.png)
 
-Highcharts graph needed to be made bi-directional, which meant end-users being able to draw different types of plots using their mouse. In addition, already-drawn plots were to be resized by the end-users' dragging of the plot edges. (you could notice the colorful pillars from the above figure) 
+Highcharts graph needed to be made bi-directional, which meant end-users being able to draw different types of plots using their mouse.  
+In addition, already-drawn plots were to be resized by the end-users' dragging of the plot edges. (you could notice the colorful pillars from the above figure)  
 Given the primary purpose of Highcharts, it implied heavy customization and an elaborate manipulation of the available interfaces to the graph.
 
 Google it! That was my first response to this challenge.  
@@ -17,6 +18,7 @@ So there came the realization -
 > I need the **top-down approach**
 
 Here's how I broke the issue down to smaller pieces.
+
 <img src="/img/blog/top-down-sigsense.png" alt="Flight History Simulator" width="100%">
 
 At the end of the day, the challenge boiled down to resolving 3 **<abbr title="the green ones on the above figure">leaf issues</abbr>** :
