@@ -2,6 +2,6 @@
   display: none !important;
 }
 
-iframe {
+iframe:not(.cp_embed_iframe) {
   position: fixed;
 }

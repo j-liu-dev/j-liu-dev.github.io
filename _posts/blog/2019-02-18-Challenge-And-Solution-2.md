@@ -13,7 +13,6 @@ Simply put, they wanted an extra bit of decor to their report tables - **groupin
 
 Before moving onto my solution, you could also give it a little thought, just for fun.
 
-One might think of the simplest solution, and even wonder why does it have to be so difficult?  
 The easy solution could be :
 - Give the <abbr>th</abbr>s fixed width or proportional width
 - Attach grouping brace <abbr>div</abbr>s on top of the table, and sync their width with the <abbr>th</abbr> counter-parts
@@ -36,6 +35,7 @@ The colored blocks (from the above figure) were made _absolute_ children of the 
 ```
 _2000px_ is a randomly-picked big value that enables the block extend past the right edge of the table.
 
+
 <p class="codepen" data-height="265" data-theme-id="0" data-default-tab="result" data-user="zixingliu" data-slug-hash="omVPWK" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="MAT - header cells grouping labels">
   <span>See the Pen <a href="https://codepen.io/zixingliu/pen/omVPWK/">
   MAT - header cells grouping labels</a> by Zixing Liu (<a href="https://codepen.io/zixingliu">@zixingliu</a>)
@@ -43,5 +43,6 @@ _2000px_ is a randomly-picked big value that enables the block extend past the r
 </p>
 
 This solution made grouping braces always attached to their corresponding columns no matter what.  
-I admit this was a _hack_ and might not be the best solution. Please feel free to message me if you have better ideas.  
+I admit this was a _hack_ and might not be the best solution. Please feel free to message me if you have better ideas.
+
 Cheers!
