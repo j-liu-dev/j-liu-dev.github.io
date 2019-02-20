@@ -1,6 +1,6 @@
 ---
 layout: blog_post
-title: Challenge & Solution : Highcharts
+title: Challenge & Solution (Highcharts)
 category: blog
 ---
 
