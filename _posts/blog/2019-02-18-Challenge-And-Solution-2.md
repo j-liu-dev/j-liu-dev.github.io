@@ -15,8 +15,8 @@ Simply put, they wanted an extra bit of decor to their report tables - **groupin
 Before moving onto my solution, you could also give it a little thought, just for fun.
 
 The easy solution could be :
-- Give the <abbr>th</abbr>s fixed width or proportional width
-- Attach grouping brace <abbr>div</abbr>s on top of the table, and sync their width with the <abbr>th</abbr> counter-parts
+- Give the <abbr title="Table column header">th</abbr>s fixed width or proportional width
+- Attach grouping brace <abbr title="HTML tag">div</abbr>s on top of the table, and sync their width with the <abbr title="Table column header">th</abbr> counter-parts
 
 However, this solution doesn't apply to the scenario of elastic/dynamic column widths.  
 In my experience, fixed or proportional column widths are not effective. Try not giving them explicit widths, and you will see how elastic they are on different screen sizes.  
