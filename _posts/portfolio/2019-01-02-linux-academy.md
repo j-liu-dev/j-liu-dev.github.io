@@ -57,11 +57,6 @@ Sometimes, I used some elaborate hacks to deliver an aesthetically and egonomica
 For example, to render a table that had a couple of column-grouping braces over the header, I tried 6 different approaches with different drawbacks.  
 Finally, I settled with absolutely-positioned child <abbr title="HTML tag">div</abbr>s of the <abbr title="HTML tag for table header">th</abbr>s so they could share the parents' width while overlapping with its peers using z-Index.  
 
-<p class="codepen" data-height="265" data-theme-id="0" data-default-tab="result" data-user="zixingliu" data-slug-hash="omVPWK" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="MAT - header cells grouping labels">
-  <span>See the Pen <a href="https://codepen.io/zixingliu/pen/omVPWK/">
-  MAT - header cells grouping labels</a> by Zixing Liu (<a href="https://codepen.io/zixingliu">@zixingliu</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
 <a href="/blog/2019/02/18/Challenge-And-Solution-2" target="_blank">Check the details of this challenge</a>
 
 ### Accomplishments, My lesson
