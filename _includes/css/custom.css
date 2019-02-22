@@ -95,6 +95,10 @@ section#about ul  {
 
 /* Portfolio Posts */
 
+.portfolio-modal a {
+  color: #1a77bd;
+}
+
 .portfolio-modal hr.star-primary:after {
   content: "\f0b1";
 }

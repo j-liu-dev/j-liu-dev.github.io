@@ -6,7 +6,7 @@ category: blog
 Styling-wise, have you ever experienced the dilemma between the pure-CSS solution and Javascript-driven solution?
 
 As a developer, I frequently find myself wondering between the two, especially when the UI needs more than just the conventional CSS rules.  
-Recently, while working at [Linux Academy](http://www.linuxacademy.com), I came across one of the most tricky issues in my CSS journey.
+Recently, while working at <a href="http://www.linuxacademy.com" target="_blank">Linux Academy</a>, I came across one of the most tricky issues in my CSS journey.
 
 Simply put, they wanted an extra bit of decor to their report tables - **grouping braces for table columns**.
 

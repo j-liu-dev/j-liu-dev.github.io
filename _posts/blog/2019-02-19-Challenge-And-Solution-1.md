@@ -4,7 +4,7 @@ title: Challenge & Solution (Highcharts)
 category: blog
 ---
 
-While working at [Sigsense Technologies](http://www.sigsensetech.com), I was badly stuck with unseen customization of Highcharts graph.
+While working at <a href="http://www.sigsensetech.com" target="_blank">Sigsense Technologies</a>, I was badly stuck with unseen customization of Highcharts graph.
 
 ![Machine Learning UI](/img/portfolio/sigsense_machine_learning.png)
 

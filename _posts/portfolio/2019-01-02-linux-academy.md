@@ -62,7 +62,7 @@ Finally, I settled with absolutely-positioned child <abbr title="HTML tag">div</
   MAT - header cells grouping labels</a> by Zixing Liu (<a href="https://codepen.io/zixingliu">@zixingliu</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
-[Check the details of this challenge](/blog/2019/02/18/Challenge-And-Solution-2)
+<a href="/blog/2019/02/18/Challenge-And-Solution-2" target="_blank">Check the details of this challenge</a>
 
 ### Accomplishments, My lesson
 
