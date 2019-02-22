@@ -38,7 +38,7 @@ The colored blocks (from the above figure) were made _absolute_ children of the 
 _2000px_ is a randomly-picked big value that enables the block extend past the right edge of the table.
 
 
-<p class="codepen" data-height="265" data-theme-id="0" data-default-tab="result" data-user="zixingliu" data-slug-hash="omVPWK" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="MAT - header cells grouping labels">
+<p class="codepen" data-height="524" data-theme-id="0" data-default-tab="result" data-user="zixingliu" data-slug-hash="omVPWK" style="height: 524px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="MAT - header cells grouping labels">
   <span>See the Pen <a href="https://codepen.io/zixingliu/pen/omVPWK/">
   MAT - header cells grouping labels</a> by Zixing Liu (<a href="https://codepen.io/zixingliu">@zixingliu</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
