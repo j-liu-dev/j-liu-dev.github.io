@@ -29,7 +29,7 @@ header hr.star-primary:after {
     content: "\f121";
 }
 
-header > div.container > div > div > img {
+header > div.container-fluid > div > div > img.profile {
     width: 300px;
     border-radius: 150px;
 }
