@@ -34,6 +34,11 @@ header > div.container-fluid > div > div > img.profile {
     border-radius: 150px;
 }
 
+header > div.container-fluid > .row {
+    display: flex;
+    align-items: center;
+}
+
 /* About */
 
 section#about hr.star-light:after,

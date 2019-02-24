@@ -108,18 +108,23 @@ header .intro-text .skills {
     font-weight: 300;
 }
 
-@media(min-width:768px) {
-    header .container-fluid {
-        padding-top: 200px;
-        padding-bottom: 100px;
-    }
-
+@media(min-width:992px) {
     header .intro-text .name {
         font-size: 4.75em;
     }
 
     header .intro-text .skills {
         font-size: 1.75em;
+    }
+}
+
+@media(max-width:645px) {
+    header .d-none {
+        display: none;
+    }
+
+    header .col-12 {
+        flex-grow: 1;
     }
 }
 
