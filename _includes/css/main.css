@@ -104,6 +104,7 @@ header .intro-text .name {
 }
 
 .fire {
+  letter-spacing: 5px;
   animation: animation 1s ease-in-out infinite alternate;
   -moz-animation: animation 1s ease-in-out infinite alternate;
   -webkit-animation: animation 1s ease-in-out infinite alternate;
@@ -111,6 +112,7 @@ header .intro-text .name {
 }
 
 .burn {
+  letter-spacing: 5px;
   animation: animation .65s ease-in-out infinite alternate;
   -moz-animation: animation .65s ease-in-out infinite alternate;
   -webkit-animation: animation .65s ease-in-out infinite alternate;
