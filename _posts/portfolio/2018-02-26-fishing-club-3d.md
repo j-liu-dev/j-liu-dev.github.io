@@ -66,17 +66,18 @@ Some of the trickiest scenarios were :
 - a player joins a winning club at the end of a tournament, and should we prize him if the club wins?
 - how to calculate a club's score when a player exits or enters it during the tournament?
 - whom to prize when the scores are the same? what kinds of criteria to enforce?
+
 These issues needed some creative thinking and great attention to detail when writing tests.
 
 Technologically, the biggest challenge was writing tests that could adequately mimic the data flow of the real game.  
-As for the nature of the game, the test cases had to cover large sets of data. And at the same time, test data couldn't be statically defined.  
+As for the nature of the game, the test cases had to __cover large sets of data__. And at the same time, test data __couldn't be statically defined__.  
 I came up with my own testing system where
-- YAML files define the skeleton of large input data-sets
-- a middleware parses YAML files to pseudo models
-- a <abbr title="a Ruby gem">Faker</abbr> randomly generates test outputs
-- a reverse algorithm deduces input values from the outputs
-- Psuedo models get filled with the deduced input values
-- Rspec script verifies that the populated models result in the defined outputs
+1. YAML files define the skeleton of large input data-sets
+2. a middleware parses YAML files to pseudo models
+3. a <abbr title="a Ruby gem">Faker</abbr> randomly generates test outputs
+4. a reverse algorithm deduces input values from the outputs
+5. Psuedo models get filled with the deduced input values
+6. Rspec script verifies that the populated models result in the defined outputs
 
 ### Accomplishments, My lesson
 
