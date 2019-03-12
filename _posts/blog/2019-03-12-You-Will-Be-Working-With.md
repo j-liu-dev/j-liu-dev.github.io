@@ -26,7 +26,8 @@ Of course and needless to say...
 ### Micro-management
 I find myself really slumping under it.  
 On one occasion, I had a project manager who would ask every other hour
-> How's it going?  
+> How's it going?
+
 I wasn't able to keep my calm and concentrate on the tasks at hand. I am not blaming his management style, but it surely is not my favorite.
 
 ### Responsibility
