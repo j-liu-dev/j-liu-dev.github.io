@@ -46,7 +46,7 @@ If you are reading this, it means I am quite into your project or your team. Yes
 
 ### Challenges & Creativeness
 I thrive in a challenging and creative environment.  
-Especially true when I am surrounded with awesome teammates.
+Especially true when I am surrounded with awesome & supportive teammates.
 
 ### I've got your back
 Towards my teammates and clients.  
@@ -67,6 +67,7 @@ Especially, when I am dealing with a bug, it is even more difficult to get out o
 
 I am healing from this weakness by nurturing my ability to _switch and prioritize between the tasks without feeling guilty_.
 
+<hr>
 
 So far describes me from my personal outlook.  
 ATM, my personal project is equipping myself with the world-class self-discipline.
