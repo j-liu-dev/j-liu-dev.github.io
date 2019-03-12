@@ -65,8 +65,8 @@ I know you wouldn't fire me for it.
 Whenever I have suggestions, even if they are different from your perspective, I openly communicate so it could serve the purpose of making our product better.
 
 ### Weakness
-I sometimes find myself too much obsessed with one task.  
-Especially, when I am dealing with a bug, it is even more difficult to get out of it.
+Sometimes, I could be very obsessed with a task.  
+Especially when dealing with a bug, it is even more difficult to get out of it.
 
 <img src="/img/blog/bug-fixing.jpeg" alt="Bug-fixing" width="40%">
 
