@@ -18,7 +18,7 @@ I strive to be the very incarnation of it.
 I am very sensitive to it and eager to do anything to make it better.  
 Often times, it could decide whether I go dancing to my desk in the morning OR zombie-walk to it with this ↓ face.
 
-<img src="/img/blog/no-face.png" alt="Cringe" width="50%">
+<img src="/img/blog/no-face.png" alt="Cringe" width="25%">
 
 ### Code Quality
 Of course and needless to say...
