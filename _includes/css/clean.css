@@ -5,3 +5,11 @@
 iframe:not(.cp_embed_iframe) {
   position: fixed;
 }
+
+footer {
+  margin-bottom: 0px !important;
+}
+
+#disqus_thread {
+  display: none !important;
+}
