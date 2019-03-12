@@ -11,7 +11,8 @@ You aren't looking to hire the work, but the person who made it.
 What I would fight to the death against!
 
 ### Honesty
-I strive to be the very incarnation of it.
+I strive to be the very incarnation of it.  
+<a href="https://www.charismaoncommand.com/truth-about-lying">The Truth About Lying <small>(by Charlie Houpert)</small></a>
 
 ### File Structure
 I am very sensitive to it and eager to do anything to make it better.  
@@ -73,7 +74,7 @@ I am healing from this weakness by nurturing my ability to _switch and prioritiz
 <hr>
 
 So far describes me from my personal outlook.  
-ATM, my personal project is equipping myself with the world-class self-discipline.
+ATM, my personal project is equipping myself with the world-class self-discipline. (<a href="https://30daysofdiscipline.com">30 days of discipline</a>)
 
 Felt any sympathy towards this guy? Let's <a href="mailto:soon.nerd@gmail.com">talk</a>.  
 Thought this guy is lame? Kindly <a href="mailto:soon.nerd@gmail.com">give me some advice</a>.
