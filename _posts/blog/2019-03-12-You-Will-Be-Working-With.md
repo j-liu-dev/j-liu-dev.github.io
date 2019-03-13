@@ -65,7 +65,7 @@ I know you wouldn't fire me for it.
 Whenever I have suggestions, even if they are different from your perspective, I openly communicate so it could serve the purpose of making our product better.
 
 ### Weakness
-Sometimes, I could be very obsessed with a task.  
+Sometimes, I could be so obsessed with a task that it affects my productivity.
 Especially when dealing with a bug, it is even more difficult to get out of it.
 
 <img src="/img/blog/bug-fixing.jpeg" alt="Bug-fixing" width="40%">
