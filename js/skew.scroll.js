@@ -197,6 +197,7 @@ const readyFunction = (() => {
    */
   _mouseWheelEvent = (e) => {
     if (scrollingIsActive) {
+      e.preventDefault();
       return;
     }
 
