@@ -238,20 +238,16 @@ const readyFunction = (() => {
    *  @note     auto-launch
    */
   init = (() => {
-    document.addEventListener(
+    var scrollPage = document.querySelector('.slider-pages');
+
+    scrollPage.addEventListener(
       'mousewheel',
       _mouseWheelEvent,
       false
     );
-    document.addEventListener(
+    scrollPage.addEventListener(
       'DOMMouseScroll',
       _mouseWheelEvent,
-      false
-    );
-
-    document.addEventListener(
-      'keydown',
-      _keyDownEvent,
       false
     );
   })();
