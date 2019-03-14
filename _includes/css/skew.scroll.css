@@ -6,7 +6,15 @@
   overflow: hidden;
   position: relative;
   height: 400px;
+  cursor: url(/img/scroll.png), auto;
 }
+
+@media(max-width: 1230px) {
+  .slider-pages {
+    display: none;
+  }
+}
+
 .slider-page {
   position: absolute;
   top: 0;
