@@ -168,12 +168,13 @@ const readyFunction = (() => {
    */
   _scrollingUp = () => {
     if (currentPage === 1) {
-      return;
+      return false;
     }
 
     currentPage--;
 
     _switchPages();
+    return true;
   };
   /**
    *  @function _scrollingDown
@@ -182,12 +183,13 @@ const readyFunction = (() => {
    */
   _scrollingDown = () => {
     if (currentPage === countOfPages) {
-      return;
+      return false;
     }
 
     currentPage++;
 
     _switchPages();
+    return true;
   };
   /**
    *  @function _mouseWheelEvent
@@ -201,14 +203,17 @@ const readyFunction = (() => {
       return;
     }
 
+    var scrolled = true;
     if (e.wheelDelta > 0 || e.detail < 0) {
-      _scrollingUp();
+      scrolled = _scrollingUp();
     }
     else if (e.wheelDelta < 0 || e.detail > 0) {
-      _scrollingDown();
+      scrolled = _scrollingDown();
     }
     
-    e.preventDefault();
+    if (scrolled) {
+      e.preventDefault();
+    }
   };
   /**
    *  @function _keyDownEvent
