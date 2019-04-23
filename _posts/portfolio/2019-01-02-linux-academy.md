@@ -9,11 +9,11 @@ client: Linux Academy
 application: Training Progress Reports
 project-date: May 2018 - Sep 2018
 tech:
-- Angular 5
+- React
 - Ruby on Rails
 - ElasticSearch
-- Angular Material
-- NgRx
+- Material UI
+- Redux
 - Karma & Protractor
 tools:
 - TravisCI
@@ -27,7 +27,7 @@ concepts:
 - Line Organization
 stack:
 - Linux
-- PostgreSQL
+- MongoDB
 - Redis
 - AWS
 ---
@@ -39,19 +39,19 @@ I was added to the task force, in the hopes that I could help them deliver promp
 
 ### Contributions
 
-The team lacked the necessary manpower who could handle Angular 5 code-base.  
+The team lacked the necessary manpower who could handle newly-built ReactJS code-base.  
 Urgency-stricken code-base lacked quality and I could see that it was holding back the productivity of the team big time. It needed some serious surgery.
 
 I worked out a refactoring plan that spanned over 2 weeks and put it into action from day 3.  
 For me, it was going an extra mile, and it definitely contributed to the timely delivery of the product.
 
-In the first place, they hired me for the Ruby on Rails back-end. **They were thrilled to have me actively taking lead in the Angular front-end as well**, for it being what they needed the most help with.
+In the first place, they hired me for the Ruby on Rails back-end. **They were thrilled to have me actively taking lead in the ReactJS front-end as well**, for it being what they needed the most help with.
 
 ### Challenges
 
-Angular Material is a great library - no doubt in that. But it isn't very customization-friendly.
+Material UI is a great library - no doubt in that. But it isn't very customization-friendly.
 
-I had to deal with a lot of difficulties making an Angular Material component look exactly the way the design illustrated it.  
+I had to deal with a lot of difficulties making an Material UI component look exactly the way the design illustrated it.  
 Sometimes, I used some elaborate hacks to deliver an aesthetically and egonomically pleasing UI/UX.
 
 For example, to render a table that had a couple of column-grouping braces over the header, I tried 6 different approaches with different drawbacks.  
