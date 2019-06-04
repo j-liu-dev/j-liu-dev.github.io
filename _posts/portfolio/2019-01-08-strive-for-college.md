@@ -15,6 +15,7 @@ tech:
 - Mobx
 - Twilio
 concepts:
+- Serverless
 - Async & Await
 - Hybrid
 - REST Api
@@ -29,7 +30,7 @@ tools:
 stack:
 - iOS
 - Android
-- Parse
+- Firebase
 ---
 
 ### Client
@@ -43,8 +44,18 @@ My responsibility was to leverage the existing code-base and deliver as soon as 
 
 I delivered the RN app in 4 months, single-handedly.
 
-During the process, I integrated Twilio API, so the instant messaging and video calls could be done within the platform.  
+During the process, I integrated Twilio API, so the audio and video calls could be done within the platform.  
 The integration was done on the back-end to fit Twilio API in the common API format of the project.
+
+On the other hand, I suggested that 80% of the back-end code could vanish for a more effective alternative. There came the serverless technology, namely Firebase cloud.
+I took lead in transforming of a large portion of the back-end to Firebase cloud.
+
+Firebase brought about a number of wins including but not limited to:
+- Reduced time and effort put into back-end development
+- Instant messaging infrastructure with close-to-zero efforts
+- Better separation of concern between the functional building blocks
+- Reduced cost on hosting and DB plans
+- Verified and stronger security on the core data-sets
 
 ### Challenges
 
