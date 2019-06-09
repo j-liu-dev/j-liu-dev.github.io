@@ -10,7 +10,7 @@ about:
   content:
       left: I strive to become a <a href="http://blog.codinghorror.com/a-pragmatic-quick-reference/" target="_new">Pragmatic Programmer</a>. I put special emphasis on software architecture. TDD, SOLID principles and Design patterns are the paradigms I live by as a programmer. I seek the responsibility, whether it is leading a team or owning a feature of the project.
       right: In my free time, I enjoy planting, cooking and writing. I am also a Karate green belt. Practicing strong self-discipline is what makes my life vigorous. As a bookworm and a coffee mania, a good book and an original coffee mug are the best presents for me.
-      bottom: I live in San Juan, Puerto Rico
+      bottom: I live in Mexico City, Mexico
   interests:
     header: Interests as of Late
     content:
@@ -92,7 +92,7 @@ portfolio:
 # Footer settings
 footer:
   location-header: Location
-  location: San Juan, Puerto Rico
+  location: Mexico City, Mexico
   copyright: Zixing Liu. All Rights Reserved.
   social: My Other Whereabouts
   new-thoughts: New Thoughts
