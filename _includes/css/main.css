@@ -196,6 +196,28 @@ header .intro-text .skills {
     font-weight: 300;
 }
 
+header .i-helped {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header .i-helped-image {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 50px;
+}
+
+header .i-helped-item {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+header .i-helped-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 @media(min-width:992px) {
     header .intro-text .name {
         font-size: 4.75em;
@@ -204,13 +226,13 @@ header .intro-text .skills {
     header .intro-text .skills {
         font-size: 1.75em;
     }
+
+    header .i-helped-item {
+        font-size: 2rem;
+    }
 }
 
 @media(max-width:645px) {
-    header .d-none {
-        display: none;
-    }
-
     header .col-12 {
         flex-grow: 1;
     }

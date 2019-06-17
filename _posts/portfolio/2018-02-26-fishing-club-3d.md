@@ -84,5 +84,5 @@ I came up with my own testing system where
 I personally proved that TDD was worth its fame.  
 With the TDD in place, the number of failing beta tests decreased by 85%.
 
-To the client's delight, the revenue increased by 28% after the transformation.  
+To the client's delight, the revenue increased by 8.9% after the transformation.  
 It took them 7 months to get the statistics, and they happily informed me at the end of their fiscal year.
