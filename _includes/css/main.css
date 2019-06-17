@@ -191,6 +191,15 @@ header .intro-text .name {
   10px -90px 80px  #973716;}
 }
 
+header .top-block {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+header .top-block .about {
+  padding: 100px;
+}
+
 header .intro-text .skills {
     font-size: 1.25em;
     font-weight: 300;
@@ -204,13 +213,13 @@ header .i-helped {
 }
 
 header .i-helped-image {
-  width: 100%;
-  max-width: 300px;
+  width: 80%;
+  max-width: 568px;
   margin-bottom: 50px;
 }
 
 header .i-helped-item {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 300;
 }
 
@@ -235,6 +244,14 @@ header .i-helped-item:not(:last-child) {
 @media(max-width:645px) {
     header .col-12 {
         flex-grow: 1;
+    }
+
+    header .i-helped-image {
+      margin-bottom: 30px;
+    }
+
+    header .top-block .about {
+      padding: 30px 60px 60px;
     }
 }
 
