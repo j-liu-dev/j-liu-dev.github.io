@@ -5,7 +5,7 @@ category: portfolio
 modal-id: 7
 img: fishing.png
 alt: Fishing Club 3D splash screen
-client: Robot Riot
+team: Robot Riot
 application: Fishing Game Engine
 project-date: Feb 2017 - May 2017
 tech:
@@ -35,12 +35,12 @@ stack:
 - MySQL
 ---
 
-### Client
+### Team
 
-A German games studio, <a href="https://www.robotriotgames.com" target="_blank">Robot Riot</a>, hired me to uplift the player engagement with the final goal of revenue growth.  
-They employed an ingenious concept of **Clubs** through which players could team up and compete against the other clubs in tournaments. These weekly club tournaments with prizes were the biggest incentives to the players, yet the biggest source of revenue to the company.
+A German games studio, <a href="https://www.robotriotgames.com" target="_blank">Robot Riot</a>, had to uplift the player engagement with the final goal of revenue growth.
+The team employed an ingenious concept of **Clubs** through which players could team up and compete against the other clubs in tournaments. These weekly club tournaments with prizes were the biggest incentives to the players, yet the biggest source of revenue to the company.
 
-At some point, they saw the potential of better player engagement and increased revenue in
+At some point, we saw the potential of better player engagement and increased revenue in
 - increasing the number of tournaments
 - increasing the odds of winning the prize for the clubs
 
@@ -51,6 +51,8 @@ Assuming there are 100 clubs total,
 
 I was in charge of developing this feature, including some heavy migrations. The game engine was running on __Ruby on Rails__.
 ### Contributions
+
+#### 8.9% increase in the annual revenue!
 
 I took care of the refactoring, test coverage and the error-proof migration of the database.
 
@@ -84,5 +86,5 @@ I came up with my own testing system where
 I personally proved that TDD was worth its fame.  
 With the TDD in place, the number of failing beta tests decreased by 85%.
 
-To the client's delight, the revenue increased by 8.9% after the transformation.  
-It took them 7 months to get the statistics, and they happily informed me at the end of their fiscal year.
+To the team's delight, the revenue increased by 8.9% after the transformation.  
+It took 7 months to get the statistics, and they happily informed me at the end of the fiscal year.
