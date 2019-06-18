@@ -212,7 +212,7 @@ header .i-helped {
   align-items: center;
 }
 
-header .i-helped-image {
+header .i-helped-title {
   font-size: 4rem;
   margin-bottom: 50px;
 }
@@ -245,7 +245,7 @@ header .i-helped-item:not(:last-child) {
         flex-grow: 1;
     }
 
-    header .i-helped-image {
+    header .i-helped-title {
       margin-bottom: 30px;
     }
 
