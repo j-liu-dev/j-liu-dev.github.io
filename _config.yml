@@ -80,7 +80,7 @@ kramdown:
 # Portfolio settings
 portfolio:
   labels:
-    client: Client
+    team: Team
     project-date: Date
     application: Application
     tech: Technologies
@@ -108,9 +108,6 @@ social:
   - title: goodreads
     tooltip: "Goodreads: Books I've been reading"
     url: http://www.goodreads.com/jsliu
-
-# Credits content
-credits: Special thanks to Bill Martin
 
 # Build settings
 permalink: pretty
