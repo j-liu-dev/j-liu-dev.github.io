@@ -10,7 +10,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{% if page.layout == 'blog_post' %}{{site.url}}{% endif %}#page-top">{{ site.title }}</a>
+                <a class="navbar-brand" href="{% if page.layout != 'default' %}{{site.url}}{% endif %}#page-top">{{ site.title }}</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -20,16 +20,16 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="{% if page.layout == 'blog_post' || page.layout == 'blog_post_special' %}{{site.url}}{% endif %}#portfolio">Portfolio</a>
+                        <a href="{% if page.layout != 'default' %}{{site.url}}{% endif %}#portfolio">Portfolio</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="{% if page.layout == 'blog_post' || page.layout == 'blog_post_special' %}{{site.url}}{% endif %}#about">About</a>
+                        <a href="{% if if page.layout != 'default' %}{{site.url}}{% endif %}#about">About</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="{% if if page.layout == 'blog_post' || page.layout == 'blog_post_special' %}{{site.url}}{% endif %}#blog">Thoughts</a>
+                        <a href="{% if if page.layout != 'default' %}{{site.url}}#blog">Thoughts</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="{% if if page.layout == 'blog_post' || page.layout == 'blog_post_special' %}{{site.url}}{% endif %}#contact">Contact</a>
+                        <a href="{% if page.layout != 'default' %}{{site.url}}{% endif %}#contact">Contact</a>
                     </li>
                 </ul>
             </div>
