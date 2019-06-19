@@ -64,7 +64,7 @@ Confident that it could be better, I shed light on TDD and enforced it throughou
 ### Challenges
 
 Identifying and handling of the edge cases were the trickiest parts, both in terms of logic and implementation.  
-Some of the trickiest scenarios were :
+Some of the trickiest scenarios were:
 - a player joins a winning club at the end of a tournament, and should we prize him if the club wins?
 - how to calculate a club's score when a player exits or enters it during the tournament?
 - whom to prize when the scores are the same? what kinds of criteria to enforce?
