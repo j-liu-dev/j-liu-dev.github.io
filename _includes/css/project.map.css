@@ -16,6 +16,10 @@
   cursor: pointer !important;
 }
 
+.leaflet-pane {
+  z-index: 1000 !important;
+}
+
 .leaflet-fixed-pane {
   height: 100%;
   right: 0;
@@ -25,7 +29,7 @@
 .popup-fixed {
   position: static !important;
   height: 100%;
-  width: 30vh;
+  width: 90vw;
   max-width: 300px;
   transform: none !important;
   margin: 0;
