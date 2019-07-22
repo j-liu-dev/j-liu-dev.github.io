@@ -114,6 +114,7 @@ section#about ul  {
 
 .portfolio-modal img {
   border: 1px solid #{{ site.color.secondary-light }};
+  width: 100%;
 }
 
 .portfolio-modal li {
