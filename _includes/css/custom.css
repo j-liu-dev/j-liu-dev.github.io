@@ -233,6 +233,10 @@ article.blog-post hr.star-primary:after {
   background-color: #{{ site.color.primary }};
 }
 
+article.blog-post img {
+  width: 100%;
+}
+
 /* Account for header space that overlays articles and can cover up anchor links */
 article.blog-post a.anchor {
   display: block;
