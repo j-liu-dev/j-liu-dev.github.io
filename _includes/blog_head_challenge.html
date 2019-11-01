@@ -1,11 +1,12 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>
-        {% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}
-    </title>
+    <title>Challenge and Solution</title>
     <meta name="viewport" content="width=device-width" />
-    <meta name="description" content="{{ site.description }}" />
+    <meta
+        name="description"
+        content="For a developer, anything is possible as long as you have access to the source code for a specific library. It is my habit to start digging in through the source code when a customization seems difficult."
+    />
     {% if site.meta_author %}
     <meta name="author" content="{{ site.meta_author }}" />
     {% endif %}
@@ -14,11 +15,11 @@
         href="{{ page.url | replace:'index.html','' | prepend: site.url }}"
     />
 
-    <meta property="og:title" content="Jay Liu (React/RoR/Startup)" />
-    <meta property="og:image" content="/img/liu-og.png" />
+    <meta property="og:title" content="Hack the Highchart" />
+    <meta property="og:image" content="/img/blog/hack_highchart.png" />
     <meta
         property="og:description"
-        content="Skilled in Javascript, Ruby and startup culture"
+        content="Highcharts graph needed to be made bi-directional, which meant end-users being able to draw different types of plots using their mouse..."
     />
     <meta property="og:url" content="http://p-mob2015.github.io" />
 
@@ -33,14 +34,6 @@
     {% if site.bing_verify %}
     <meta name="msvalidate.01" content="{{ site.bing_verify }}" />
     {% endif %}
-
-    <!-- Leaflet Styles -->
-    <link
-        rel="stylesheet"
-        href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
-        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-        crossorigin=""
-    />
 
     <!-- Custom Fonts -->
     <link rel="stylesheet" href="{{ "/css/font-awesome/css/font-awesome.min.css"

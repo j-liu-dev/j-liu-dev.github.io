@@ -7,7 +7,7 @@ img: fishing.png
 alt: Fishing Club 3D splash screen
 team: Robot Riot
 application: Fishing Game Engine
-project-date: Feb 2017 - May 2017
+project-date: May 2014 - Aug 2014
 tech:
 - Ruby on Rails
 - RSpec

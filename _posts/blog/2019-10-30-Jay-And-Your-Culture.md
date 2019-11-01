@@ -1,10 +1,10 @@
 ---
-layout: blog_post_special
-title: Is Jay a good fit for your company?
+layout: blog_post_culture_fit
+title: Jay and the startup culture
 category: blog
 ---
 
-I worked for 7 startups, as a full-time employee for 4 of them, and a contractor for the other 3.
+I worked for 4 startups, as a full-time employee for 3 of them, and a contractor for the other.
 
 During the process, I taught myself to be creative, innovative and entrepreneurial while delivering what is expected from me - the high-quality software.
 

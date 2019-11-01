@@ -2,7 +2,7 @@
 title: Jay Liu
 email: soon.nerd@gmail.com
 url: http://p-mob2015.github.io
-description: React - Node - RoR
+description: React - Ruby on Rails - Startup culture
 meta_author: Jay Liu
 
 about:
@@ -23,7 +23,7 @@ about:
       center:
         header: Soon
         list:
-          - item: Visual Studio Mastery
+          - item: VSCode Mastery
           - item: IOT
           - item: Blockchain
       right:
@@ -34,7 +34,7 @@ about:
           - item: Machine Learning
   button:
     text: Download My Resume
-    href: /resume/jay-liu-resume-2019-08.pdf
+    href: /resume/jay-liu-resume-2019-10.pdf
 
 # Google webmaster tools
 google_verify:
