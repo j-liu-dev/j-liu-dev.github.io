@@ -1,0 +1,16 @@
+#special-project {
+  padding-top: 0px;
+  /*height: 30vh;*/
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(113,198,219,1) 35%, rgba(0,174,217,1) 100%);
+}
+
+#special-project .project-description {
+  color: white;
+  margin-top: 30px;
+}
+
+#special-project .project-description a {
+  display: inline-block;
+  color: #005a70;
+}
