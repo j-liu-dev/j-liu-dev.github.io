@@ -1,0 +1,168 @@
+I"�@<p>As confusing as the title is, the life cycle of my custom hooks confused me a big time.<br />
+If you’ve ever wondered why <code class="highlighter-rouge">useState</code> and other hooks / functions wouldn’t behave as expected inside a custom hook, this article could shed a light on your confusion.</p>
+
+<h2 id="the-prelude---hooks">the Prelude - hooks</h2>
+<p>We all remember that inspiring moment when React v16.8 introduced hooks and context API.<br />
+Fascinated by hooks and the new potential of functional components, I immediately started adapting those in my React projects.</p>
+
+<p>The default hooks, namely <code class="highlighter-rouge">useState</code>, <code class="highlighter-rouge">useEffect</code>, <code class="highlighter-rouge">useLayoutEffect</code>, <code class="highlighter-rouge">useReducer</code> and <code class="highlighter-rouge">useCallback</code>, opened a new world to us developers and affected the way we use dependencies like <code class="highlighter-rouge">Redux</code>; in a good way.<br />
+I literally couldn’t complain until I faced the biggest confusion of my React-ish life.</p>
+
+<h2 id="enter-custom-hooks">enter Custom hooks</h2>
+<p>At one point of my hooks journey, I knew I was ready to ditch HOCs(High Order Components) and bring about the new level of DRY(Do not Repeat Yourself).<br />
+But how? Using <strong>custom hooks</strong>!</p>
+
+<p>I enjoyed the initial success and was more than eager to hookerize each and every bit of my React codebase.</p>
+
+<hr />
+<video width="100%" autoplay="" loop="">
+  <source src="/video/animationhook.webm" type="video/mp4" />
+</video>
+<p><strong>hamburger menu animation hook in action, and the code below</strong></p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">useState</span><span class="p">,</span> <span class="nx">useEffect</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">Animated</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react-native</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">Metrics</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../Themes</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="kd">const</span> <span class="nx">useMenuAnimation</span> <span class="o">=</span> <span class="p">(</span><span class="nx">isExpanded</span><span class="p">,</span> <span class="nx">fullSize</span> <span class="o">=</span> <span class="nx">Metrics</span><span class="p">.</span><span class="nx">mainMenuWidth</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="p">[</span><span class="nx">animation</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="k">new</span> <span class="nx">Animated</span><span class="p">.</span><span class="nx">Value</span><span class="p">(</span><span class="mi">0</span><span class="p">));</span>
+
+  <span class="nx">useEffect</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">isExpanded</span> <span class="o">===</span> <span class="kc">undefined</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">animation</span><span class="p">.</span><span class="nx">setValue</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+      <span class="k">return</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">let</span> <span class="nx">initialValue</span><span class="p">;</span>
+    <span class="kd">let</span> <span class="nx">finalValue</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">isExpanded</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">initialValue</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+      <span class="nx">finalValue</span> <span class="o">=</span> <span class="nx">fullSize</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="nx">initialValue</span> <span class="o">=</span> <span class="nx">fullSize</span><span class="p">;</span>
+      <span class="nx">finalValue</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nx">animation</span><span class="p">.</span><span class="nx">setValue</span><span class="p">(</span><span class="nx">initialValue</span><span class="p">);</span>
+    <span class="nx">Animated</span><span class="p">.</span><span class="nx">spring</span><span class="p">(</span><span class="nx">animation</span><span class="p">,</span> <span class="p">{</span>
+      <span class="na">toValue</span><span class="p">:</span> <span class="nx">finalValue</span>
+    <span class="p">}).</span><span class="nx">start</span><span class="p">();</span>
+  <span class="p">},</span> <span class="p">[</span><span class="nx">isExpanded</span><span class="p">]);</span>
+
+  <span class="k">return</span> <span class="p">[</span><span class="nx">animation</span><span class="p">];</span>
+<span class="p">};</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="nx">useMenuAnimation</span><span class="p">;</span>
+
+</code></pre></div></div>
+<p>Custom hooks were quite intriguing, and I definitely loved the applauds of the teammates who appreciated the smarter sharing of logic between the components.</p>
+
+<h2 id="the-challenge">the Challenge</h2>
+<p>Being the advocate of hooks, I voluntarily trained junior teammates on the concepts and usage of hooks and context API.<br />
+When they asked about custom hooks, I wrote them a counter hook on the spot. I didn’t doubt that it’d work.</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">useState</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span>
+
+<span class="kd">const</span> <span class="nx">useCounter</span> <span class="o">=</span> <span class="p">(</span><span class="nx">initialValue</span><span class="p">,</span> <span class="nx">step</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="p">[</span><span class="nx">counter</span><span class="p">,</span> <span class="nx">setCounter</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="nx">initialValue</span><span class="p">)</span>
+
+  <span class="kd">const</span> <span class="nx">increase</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">setCounter</span><span class="p">(</span><span class="nx">counter</span> <span class="o">+</span> <span class="nx">step</span><span class="p">)</span>
+  <span class="p">}</span>
+
+  <span class="kd">const</span> <span class="nx">decrease</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">setCounter</span><span class="p">(</span><span class="nx">counter</span> <span class="o">-</span> <span class="nx">step</span><span class="p">)</span>
+  <span class="p">}</span>
+
+  <span class="k">return</span> <span class="p">{</span>
+    <span class="nx">counter</span><span class="p">,</span>
+    <span class="nx">increase</span><span class="p">,</span>
+    <span class="nx">decrease</span><span class="p">,</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="nx">useCounter</span>
+</code></pre></div></div>
+<p>Surprisingly enough, it didn’t work!<br />
+It took me as long as 3 hours to figure out why.</p>
+
+<h2 id="a-component-equivalent">a Component equivalent</h2>
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span> <span class="nx">useState</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span>
+
+<span class="kd">const</span> <span class="nx">Counter</span> <span class="o">=</span> <span class="p">({</span>
+  <span class="nx">initialValue</span><span class="p">,</span>
+  <span class="nx">step</span><span class="p">,</span>
+<span class="p">})</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="p">[</span><span class="nx">counter</span><span class="p">,</span> <span class="nx">setCounter</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="nx">initialValue</span><span class="p">)</span>
+
+  <span class="kd">const</span> <span class="nx">increase</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">setCounter</span><span class="p">(</span><span class="nx">counter</span> <span class="o">+</span> <span class="nx">step</span><span class="p">)</span>
+  <span class="p">}</span>
+
+  <span class="kd">const</span> <span class="nx">decrease</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">setCounter</span><span class="p">(</span><span class="nx">counter</span> <span class="o">-</span> <span class="nx">step</span><span class="p">)</span>
+  <span class="p">}</span>
+
+  <span class="k">return</span> <span class="p">(</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">className=</span><span class="s2">"counter"</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onClick=</span><span class="si">{</span><span class="nx">decrease</span><span class="si">}</span><span class="p">&gt;</span>-<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">span</span> <span class="na">className=</span><span class="s2">"value"</span><span class="p">&gt;</span><span class="si">{</span><span class="nx">counter</span><span class="si">}</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onClick=</span><span class="si">{</span><span class="nx">increase</span><span class="si">}</span><span class="p">&gt;</span>+<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">)</span>
+<span class="p">}</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="nx">useCounter</span>
+</code></pre></div></div>
+<p>We know this component works.</p>
+
+<h2 id="the-discovery">the Discovery</h2>
+<p>After a long haul, I discovered that my assumption about custom hooks’ life cycle was completely wrong.</p>
+
+<p>Components re-render themselves when a state value changes, meaning that <code class="highlighter-rouge">increase</code> and <code class="highlighter-rouge">decrease</code> are redefined whenever <code class="highlighter-rouge">counter</code> changes.<br />
+However, they remained the same in the counter hook.<br />
+Why? Custom hooks are just functions - the normal functions.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">...</span>
+<span class="c1">// a console output that signals function definition</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">`increase` function will be defined</span><span class="dl">'</span><span class="p">)</span>
+
+<span class="c1">// a console output for every increase action</span>
+<span class="kd">const</span> <span class="nx">increase</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">counter</span><span class="p">)</span>
+  <span class="nx">setCounter</span><span class="p">(</span><span class="nx">counter</span> <span class="o">+</span> <span class="nx">step</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="p">...</span>
+</code></pre></div></div>
+<p>The console output of the hook went on like <strong>0, 0, 0, 0, …</strong>, whereas <strong>0, 1, 2, 3, …</strong> showed for the component.<br />
+Then I understood that custom hooks are to be treated like a function not a component.</p>
+<blockquote>
+  <p>There’s no such thing as re-render for custom hooks</p>
+</blockquote>
+
+<h2 id="solutions">Solutions</h2>
+<p>With the new finding in mind, I wrote 2 separate solutions for the counter hook.</p>
+
+<p>The first one was forcefully redefining <code class="highlighter-rouge">increase</code> and <code class="highlighter-rouge">decrease</code> functions whenever <code class="highlighter-rouge">counter</code> value changed, thus mimicking the component’s behavior.</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">...</span>
+<span class="kd">const</span> <span class="nx">increase</span> <span class="o">=</span> <span class="nx">useCallback</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">setCounter</span><span class="p">(</span><span class="nx">counter</span> <span class="o">+</span> <span class="nx">step</span><span class="p">)</span>
+<span class="p">},</span> <span class="p">[</span><span class="nx">counter</span><span class="p">])</span>
+
+<span class="kd">const</span> <span class="nx">decrease</span> <span class="o">=</span> <span class="nx">useCallback</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">setCounter</span><span class="p">(</span><span class="nx">counter</span> <span class="o">-</span> <span class="nx">step</span><span class="p">)</span>
+<span class="p">},</span> <span class="p">[</span><span class="nx">counter</span><span class="p">])</span>
+<span class="p">...</span>
+</code></pre></div></div>
+<p><small>(please note that I intentionally avoided <code class="highlighter-rouge">useCallback</code> in the component implementation for the presentation purpose)</small></p>
+
+<p>The second one was rather simple:</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">...</span>
+<span class="kd">const</span> <span class="nx">increase</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">setCounter</span><span class="p">(</span><span class="nx">counter</span> <span class="o">=&gt;</span> <span class="nx">counter</span> <span class="o">+</span> <span class="nx">step</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="kd">const</span> <span class="nx">decrease</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">setCounter</span><span class="p">(</span><span class="nx">counter</span> <span class="o">=&gt;</span> <span class="nx">counter</span> <span class="o">-</span> <span class="nx">step</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="p">...</span>
+</code></pre></div></div>
+<p><small>precaution: the above solution wouldn’t work well in the scenarios where more than one state value are involved</small></p>
+:ET

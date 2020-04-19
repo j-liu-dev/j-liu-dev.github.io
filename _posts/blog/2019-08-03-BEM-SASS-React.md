@@ -15,31 +15,31 @@ BEM, which stands for Block-Element-Modifier, is one of the most well-accepted C
 To give you a quick & easy overview of what BEM looks like:
 
 **Block (B)**
-```
+```html
 <div class="book">...</div>
 ```
-```
+```css
 .book {
   color: #EFEFEF;
 }
 ```
 **Element (E)**
-```
+```html
 <div class="book">
   ...
   <span class="book__author"></span>
 </div>
 ```
-```
+```css
 .book__author {
   color: #004345;
 }
 ```
 **Modifier (M)**
-```
+```html
 <div class="book book--sold">...</div>
 ```
-```
+```css
 .book--sold {
   text-decoration: stroke;
 }
@@ -54,7 +54,7 @@ Besides enabling a global naming rule for your project and the team, BEM provide
 (reference: <a href="https://www.altitudesystems.co.uk/blog/2017/july/to-bem-or-not-to-bem-that-is-the-question" target="_blank">To BEM or not to BEM? That is the question.</a>)
 
 BEM couples well with SCSS syntax. Imagine you write CSS rules for a book element.
-```
+```html
 <div class="book">
   <span class="book__author">Napoleon Hill</span>
   <span class="book__title">Think and Grow Rich</span>
@@ -64,14 +64,14 @@ BEM couples well with SCSS syntax. Imagine you write CSS rules for a book elemen
   <span class="book__title">The Magic of Thinking Big</span>
 </div>
 ```
-```
+```css
 .book { background-color: black; }
 .book__author { color: white; }
 .book__title { font-weight: bold; color: white; }
 .book--sold { text-decoration: stroke; }
 ```
 Let's rewrite this rule in SCSS.
-```
+```scss
 .book {
   background-color: black;
   
@@ -117,7 +117,7 @@ One of the common misconceptions when writing a component style is ignoring the 
 Imagine we write styles for Book component and Article component separately.
 
 **Book.jsx**
-```
+```jsx
 ...
 import './Book.style.scss';
 ...
@@ -130,12 +130,12 @@ export default ({ author, title }) => (
 );
 ```
 **Book.style.scss**
-```
+```css
 .author { color: white; }
 .title { font-weight: bold; color: white; }
 ```
 **Article.jsx**
-```
+```jsx
 ...
 import './Article.style.scss';
 ...
@@ -148,13 +148,13 @@ export default ({ author, title }) => (
 );
 ```
 **Article.style.scss**
-```
+```css
 .author { color: blue; }
 .title { text-decoration: underline; color: blue; }
 ```
 One could falsely assume that these two styles are kept local to the respective components, but they are not. As and when these two components render on the same page, the unwanted conflicts of CSS rules occur.  
 Note the resulting HTML page source:
-```
+```html
 <body>
   ...
   <div class="book">
@@ -181,7 +181,7 @@ Note the resulting HTML page source:
 The prettiest solution to the above issue is applying scopes, the unique namespaces, for each component style definitions.
 
 **Book.style.scss**
-```
+```scss
 .book {
   .author {
     color: white;
@@ -193,7 +193,7 @@ The prettiest solution to the above issue is applying scopes, the unique namespa
 }
 ```
 **Article.style.scss**
-```
+```scss
 .article {
   .author {
     color: blue;
@@ -207,7 +207,7 @@ The prettiest solution to the above issue is applying scopes, the unique namespa
 If you chose to use BEM, the namespacing of component styles would come naturally, and you don't need to stress about remembering it every time. Meanwhile, your application benefits from the aforementioned BEM advantages as well.
 
 **Book.style.scss**
-```
+```scss
 .book {
   &__author {
     color: white;
@@ -219,7 +219,7 @@ If you chose to use BEM, the namespacing of component styles would come naturall
 }
 ```
 **Article.style.scss**
-```
+```scss
 .article {
   &__author {
     color: blue;

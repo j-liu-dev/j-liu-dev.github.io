@@ -1,0 +1,59 @@
+I"-	<p>With so many soliloquies of SOLID Principles online, ripe with the same old definitions, theoretical verbosity, and yet, the most basic of examples, I’ve always found it difficult to digest and keep it all in mind while developing.</p>
+
+<p>So I wanted to create a condensed checklist that is wall hang-worthy.</p>
+
+<h2 id="solid-principles-checklist">SOLID Principles Checklist</h2>
+
+<ul>
+  <li>SOLID is a means to an end, not an end in itself</li>
+  <li>The end is maintainability.</li>
+  <li>SOLID dogmatism should not dirty the code with Needless Complexity</li>
+</ul>
+
+<h3 id="single-responsibility-principle">Single Responsibility Principle</h3>
+
+<ul>
+  <li>Each class does one thing and does one thing well</li>
+  <li>Each method in a class does one thing and does one thing well</li>
+  <li>If a classes’ behavior ever changed, it should impact most of its methods</li>
+  <li>Aim for short enough methods that can fit on your screen</li>
+  <li>Avoid numerous parameters in methods</li>
+</ul>
+
+<h3 id="open-closed-principle">Open Closed Principle</h3>
+
+<p>When adding a new functionality</p>
+<ul>
+  <li>Base entities aren’t modified (closed for modification)</li>
+  <li>Other entities extend the base entity (open for extension)</li>
+  <li>Use interface, a module in ruby, as the base entity</li>
+  <li>Opt for composition over inheritance when an interface is not enough</li>
+</ul>
+
+<h3 id="liskov-substitution-principle">Liskov Substitution Principle</h3>
+
+<p>In class inheritance</p>
+<ul>
+  <li>Subclass add to the base class’s behavior</li>
+  <li>Subclass doesn’t replace the base class’s behavior</li>
+  <li>Parent instance is replaceable with any of child instances w/o side effects</li>
+</ul>
+
+<h3 id="interface-segregation-principle">Interface Segregation Principle</h3>
+
+<ul>
+  <li>Base class shouldn’t be generalized</li>
+  <li>A class shouldn’t have any methods it doesn’t use</li>
+  <li>Multiple interfaces, modules in ruby, are better than one</li>
+</ul>
+
+<h3 id="dependency-inversion-principle">Dependency Inversion Principle</h3>
+
+<ul>
+  <li>A class shouldn’t depend on a specific type of class</li>
+  <li>Avoid changing the class implementation because of a dependency</li>
+  <li>The dependency should be abstracted (generalized)</li>
+  <li>Use Dependency Injection</li>
+  <li>OCP + LSP = DIP!</li>
+</ul>
+:ET

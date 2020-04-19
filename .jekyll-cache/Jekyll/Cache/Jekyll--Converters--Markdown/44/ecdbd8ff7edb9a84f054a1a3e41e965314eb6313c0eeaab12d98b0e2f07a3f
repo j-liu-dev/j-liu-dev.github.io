@@ -1,0 +1,34 @@
+I"�<p>While working at <a href="http://www.sigsensetech.com" target="_blank">Sigsense Technologies</a>, I was badly stuck with unseen customization of Highcharts graph.</p>
+
+<p><img src="/img/portfolio/sigsense_machine_learning.png" alt="Machine Learning UI" /></p>
+
+<p>Highcharts graph needed to be made bi-directional, which meant end-users being able to draw different types of plots using their mouse.<br />
+In addition, already-drawn plots were to be resized by the end-users’ dragging of the plot edges. (you could notice the colorful pillars from the above figure)<br />
+Given the primary purpose of Highcharts, it implied heavy customization and an elaborate manipulation of the available interfaces to the graph.</p>
+
+<p>Google it! That was my first response to this challenge.<br />
+It was not very successful, as there were no such use cases discussed or answered publicly.<br />
+So there came the realization -</p>
+<blockquote>
+  <p>I need the <strong>top-down approach</strong></p>
+</blockquote>
+
+<p>Here’s how I broke the issue down to smaller pieces.</p>
+
+<p><img src="/img/blog/top-down-sigsense.png" alt="Flight History Simulator" width="100%" /></p>
+
+<p>At the end of the day, the challenge boiled down to resolving 3 <strong><abbr title="the green ones on the above figure">leaf issues</abbr></strong> :</p>
+<ul>
+  <li>Catch mouse events on Highcharts canvas</li>
+  <li>Add plots after the graph is rendered</li>
+  <li>Remove plots after the graph is rendered</li>
+</ul>
+
+<p class="codepen" data-height="501" data-theme-id="0" data-default-tab="result" data-user="zixingliu" data-slug-hash="WPWBpJ" style="height: 501px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="Highcharts draw on-the-fly">
+  <span>See the Pen <a href="https://codepen.io/zixingliu/pen/WPWBpJ/">
+  Highcharts draw on-the-fly</a> by Jay Liu (<a href="https://codepen.io/zixingliu">@zixingliu</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+
+<p>Then, with the issue broken down to tangible, atomic and easy-to-solve pieces, I did the dreaded and contributed to the original value of the product.</p>
+:ET
