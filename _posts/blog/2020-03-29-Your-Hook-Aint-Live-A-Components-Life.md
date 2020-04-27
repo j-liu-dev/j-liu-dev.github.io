@@ -119,7 +119,7 @@ const Counter = ({
   )
 }
 
-export default useCounter
+export default Counter
 ```
 We know this component works.
 
