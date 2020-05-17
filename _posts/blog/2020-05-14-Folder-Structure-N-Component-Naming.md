@@ -104,7 +104,7 @@ Personally, I would put some non-component files in the relevantly named folders
 For example, `utils` for the helper functions, `hooks` for custom hooks, and `services` for API handlers.
 
 ### Conclusion
-This approach is definitely a `work in progress` as I'd constantly seek for a better alternative, be it an enhanced vesion of this one or a completely different one.  
+This approach is definitely a __work in progress__ as I'd constantly seek for a better alternative, be it an enhanced version of this one or a completely different one.  
 The foremost question is if I really need `Screens` folder, but it seems convenient at the moment.  
 
 <small>To be continued ...</small>
