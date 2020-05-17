@@ -1,3 +1,0 @@
-I"6<p>As confusing as the title is, the life cycle of my custom hooks confused me a big time.<br />
-If you’ve ever wondered why <code class="highlighter-rouge">useState</code> and other hooks / functions wouldn’t behave as expected inside a custom hook, this article could shed a light on your confusion.</p>
-:ET
