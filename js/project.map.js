@@ -10,7 +10,8 @@ var projects = [{
   tech: ['React', 'Node', 'Docker', 'D3', 'Highcharts'],
   role: 'Lead Developer',
   thumb: 'sigsense_machine_learning.png',
-  link: 'https://www.sigsensetech.com'
+  link: 'https://www.sigsensetech.com',
+  icon: '/img/project-icons/sigsense.png'
 }, {
   title: 'Airnest',
   at: [400, 450],
@@ -18,50 +19,76 @@ var projects = [{
   role: 'React / Ruby on Rails Engineer, React Native Lead',
   thumb: 'thumbs/airnest-trans.png',
   transparent: true,
-  link: 'https://www.measure.com/drone-software/features'
+  link: 'https://www.measure.com/drone-software/features',
+  icon: '/img/project-icons/airnest.webp'
 }, {
   title: 'Robot Riot',
   at: [310, 310],
   tech: ['Ruby on Rails', 'TDD', 'SOLID', 'Leaderboard'],
   role: 'Ruby on Rails Developer',
   thumb: 'thumbs/fishing-screen.png',
-  link: 'https://www.robotriotgames.com'
+  link: 'https://www.robotriotgames.com',
+  icon: '/img/project-icons/robotriot.ico'
 }, {
   title: 'DigiPro, Inc',
   at: [500, 750],
   tech: ['Node', 'Express', 'Mongoose', 'Docker'],
-  role: 'Node Developer',
+  role: 'Node Developer (via Toptal)',
   thumb: 'thumbs/digipro.png',
-  link: 'https://www.digi-inc.com'
+  link: 'https://www.digi-inc.com',
+  icon: '/img/project-icons/digipro.jpeg'
 }, {
   title: 'Acuity Scheduling',
   at: [500, 500],
   tech: ['React', 'Node', 'React Native', 'GraphQL'],
-  role: 'React / React Native / GraphQL Developer',
+  role: 'React / React Native / GraphQL Developer (via Toptal)',
   thumb: 'thumbs/acuity.png',
-  link: 'https://www.acuityscheduling.com'
+  link: 'https://www.acuityscheduling.com',
+  icon: '/img/project-icons/acuity-scheduling.png'
 }, {
   title: 'Simple.Space',
   at: [430, 370],
   tech: ['React', 'Ruby on Rails', 'Sidekiq', 'HAML'],
   role: 'Ruby on Rails / React Engineer',
   thumb: 'thumbs/ss.png',
-  link: 'https://www.simple.space'
+  link: 'https://www.simple.space',
+  icon: '/img/project-icons/simplespace.png'
 }, {
   title: 'Project Map It',
   at: [540, 660],
   tech: ['React', 'Node', 'Oauth2', 'Mongoose', 'Google Maps'],
   role: 'React / Node Developer',
   thumb: 'thumbs/pmit.png',
-  link: 'https://www.projectmap.it'
+  link: 'https://www.projectmap.it',
+  icon: '/img/project-icons/mapit.png',
+  iconSize: [20,30],
 }, {
   title: 'Strive for College',
   at: [450, 610],
-  tech: ['React', 'Node', 'React Native', 'Firebase', 'Twilio'],
-  role: 'Contractor',
+  tech: ['React', 'Node', 'React Native', 'Firebase', 'Twilio', 'GraphQL'],
+  role: 'Volunteer',
   thumb: 'thumbs/ustrive.png',
   transparent: true,
-  link: 'https://www.ustrive.com'
+  link: 'https://www.ustrive.com',
+  icon: '/img/project-icons/strive.jpg'
+}, {
+  title: 'Linux Academy',
+  at: [350, 430],
+  tech: ['React', 'Ruby on Rails', 'D3'],
+  role: 'Contractor (via Toptal)',
+  thumb: 'thumbs/linux.png',
+  transparent: true,
+  link: 'https://www.linuxacademy.com',
+  icon: '/img/project-icons/linuxacademy.jpg'
+}, {
+  title: 'Belmont Technology',
+  at: [600, 400],
+  tech: ['React', 'D3', 'Mapbox', 'Leaflet'],
+  role: 'Contractor (via Toptal)',
+  thumb: 'thumbs/belmont.jpg',
+  transparent: true,
+  link: 'https://www.b15y.io',
+  icon: '/img/project-icons/belmont.webp'
 }];
 var techs = [{
   key: 'react',
@@ -152,20 +179,18 @@ var initMap = function initMap() {
   }).addTo(map);
   var pane = map.createPane('fixed', document.getElementById('pmap')); // Projects
 
-  var markerIcon = L.icon({
-    iconUrl: '/img/map-marker.png',
-    iconSize: [50, 50]
-  });
-
   for (var _i = 0, _projects = projects; _i < _projects.length; _i++) {
     var proj = _projects[_i];
     var tooltip = L.tooltip({
       direction: 'bottom',
       className: 'proj-tooltip',
-      offset: [0, 5]
+      offset: [0, 10]
     }).setContent(proj.title);
     var marker = L.marker(L.latLng(proj.at), {
-      icon: markerIcon
+      icon: L.icon({
+        iconUrl: proj.icon,
+        iconSize: proj.iconSize || [30, 30]
+      })
     }).bindTooltip(tooltip).addTo(map);
     var popup = L.popup({
       pane: 'fixed',

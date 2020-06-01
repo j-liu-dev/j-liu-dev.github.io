@@ -1,5 +1,9 @@
 #project-map {
-  padding-top: 0px;
+  padding-top: 50px;
+}
+
+#project-map h2 {
+  text-transform: none;
 }
 
 #pmap {
