@@ -4,7 +4,7 @@ title: Jay and the startup culture
 category: blog
 ---
 
-I worked for 4 startups, as a full-time employee for 3 of them, and a contractor for the other.
+I worked for 3 startups, as a full-time employee for 2 of them, and a contractor for the other.
 
 During the process, I taught myself to be creative, innovative and entrepreneurial while delivering what is expected from me - the high-quality software.
 
