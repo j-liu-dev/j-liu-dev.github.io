@@ -50,3 +50,9 @@ In class inheritance
 - The dependency should be abstracted (generalized)
 - Use Dependency Injection
 - OCP + LSP = DIP!
+
+
+Following is a famous visualisation of the SOLID principles by a Medium author.  
+[The S.O.L.I.D Principles in Pictures by Ugonna Thelma](https://medium.com/backticks-tildes/the-s-o-l-i-d-principles-in-pictures-b34ce2f1e898)
+
+It is common that we go adrift in the profoundness of the principles and concepts, but they could be readily mastered through constant reminders and learning the perspectives of other great minds.  
