@@ -51,8 +51,9 @@ In class inheritance
 - Use Dependency Injection
 - OCP + LSP = DIP!
 
+#### Further Readings
 
 Following is a famous visualisation of the SOLID principles by a Medium author.  
-[The S.O.L.I.D Principles in Pictures by Ugonna Thelma](https://medium.com/backticks-tildes/the-s-o-l-i-d-principles-in-pictures-b34ce2f1e898)
+[The S.O.L.I.D Principles in Pictures by Ugonna Thelma](https://medium.com/backticks-tildes/the-s-o-l-i-d-principles-in-pictures-b34ce2f1e898){:target = "_blank"}
 
 It is common that we go adrift in the profoundness of the principles and concepts, but they could be readily mastered through constant reminders and learning the perspectives of other great minds.  
