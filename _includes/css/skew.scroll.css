@@ -84,11 +84,11 @@
   line-height: 1.35em;
 }
 .slider-page__link {
-  color: #80a1c1;
+  color: #A51927;
+  text-decoration: underline;
 }
 .slider-page__link:hover, .slider-page__link:focus {
-  color: #6386a9;
-  text-decoration: none;
+  color: #E12631;
 }
 /***********************
  *  Project JS Styles

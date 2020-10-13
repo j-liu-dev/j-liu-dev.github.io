@@ -57,11 +57,11 @@ google_analytics_tracker_id:
 color:
   primary: 101010 #80B3FF
   primary-rgb: "255,0,0" #"128,179,255"
-  secondary-light: 58635a #FD6E8A
-  secondary: 38433a #FD6E8A
-  secondary-dark: 18231a #A2122F
+  secondary-light: E12631 #FD6E8A
+  secondary: AF1B19 #FD6E8A
+  secondary-dark: 851213 #A2122F
   blog-text: 222
-  link: 1a77bd
+  link: A51927
 
 # Blog settings
 blog:
